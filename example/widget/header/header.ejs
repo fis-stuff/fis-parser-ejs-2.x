@@ -1,0 +1,9 @@
+<header>
+	<div class="slogan">AppName: <%= appName %></div>
+	<% if(login) {-%>
+	<div class="userinfo">登录信息</div>
+	<%} else {-%>
+	<div class="loginlink"><a href="">登录</a></div>
+	<% } -%>
+  <p><%= header %></p>
+</header>

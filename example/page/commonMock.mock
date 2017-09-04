@@ -1,0 +1,4 @@
+module.exports = {
+  title: 'ejs title',
+  appName: 'fis-parser-ejs-2.x'
+}

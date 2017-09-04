@@ -1,0 +1,32 @@
+{
+  "name": "fis-parser-ejs-2.x",
+  "version": "0.0.1",
+  "description": "ejs template parser plugin for fis3",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fis-stuff/fis-parser-ejs-2.x.git"
+  },
+  "keywords": [
+    "fis3",
+    "parser",
+    "ejs"
+  ],
+  "author": "richard chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fis-stuff/fis-parser-ejs-2.x/issues"
+  },
+  "homepage": "https://github.com/fis-stuff/fis-parser-ejs-2.x#readme",
+  "dependencies": {
+    "ejs": "^2.5.7"
+  },
+  "devDependencies": {
+    "fis3-hook-amd": "^0.2.0",
+    "fis3-hook-cmd": "^0.1.2",
+    "fis3-hook-commonjs": "^0.1.26"
+  }
+}
