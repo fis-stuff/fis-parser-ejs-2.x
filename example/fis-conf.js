@@ -1,13 +1,9 @@
 'use strict'
 
-const root = fis.project.getProjectPath();
 const util = fis.util;
 let packed = false;
 let ejsConf = {
-    loader: 'requirejs',// null,requirejs,modjs,seajs
-    loadSync: false,
-    commonMock: '/page/commonMock.mock',
-    root: root
+    loader: 'requirejs'
 };
 
 // 模块化勾子
@@ -28,6 +24,10 @@ fis.match('::package', {
     })
 });
 
+fis.match('*', {
+  domain: '/0.0.1'
+});
+
 // 使用fis-parser-ejs-2.x直接编译html文件
 fis
     .match('*.ejs', {
@@ -35,7 +35,8 @@ fis
             return require('../')(content, file, ejsConf);
         },
         rExt: '.html',
-        loaderLang: 'html'
+        loaderLang: 'html',
+        isHtmlLike: true
     })
     .match('/widget/**.{ejs,mock}', {
         release: false
