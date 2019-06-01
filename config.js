@@ -23,7 +23,7 @@ module.exports = {
   // 是否编译内容，默认为true，为false时不编译ejs语法，只引用资源依赖
   parse: true,
   // 全局的mock文件，相对于root，默认为null
-  commonMock: null,
+  commonMock: '/page/commonMock.mock',
   // ejs的root配置，默认为项目根目录
   root: path.resolve('.')
 };

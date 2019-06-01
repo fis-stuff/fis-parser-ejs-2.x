@@ -5,6 +5,6 @@ module.exports = function(content, file, settings) {
     return require('./lib')(content, file, settings).renderTpl();
   } catch (e) {
     console.log(e);
-    throw e;
+    return e.toString();
   }
 };

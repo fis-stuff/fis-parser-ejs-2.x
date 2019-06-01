@@ -4,7 +4,9 @@
   "description": "",
   "main": "fis-conf.js",
   "scripts": {
-    "deploy": "fis3 release prod && fis3 release tpl"
+    "del": "rm -rf ./output",
+    "release": "npm run del && fis3 release -c -d ./output",
+    "deploy": "npm run del && fis3 release prod"
   },
   "keywords": [],
   "author": "",

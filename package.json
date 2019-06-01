@@ -1,6 +1,6 @@
 {
   "name": "fis-parser-ejs-2.x",
-  "version": "0.0.2",
+  "version": "0.0.3-alpha",
   "description": "ejs template parser plugin for fis3",
   "main": "index.js",
   "scripts": {
